@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Nunito:wght@400;700&family=Poppins:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    background-color: whitesmoke;
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-position: top;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 40px auto 20px;
+
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: aquamarine;
+    transition: 0.3S;
+}
+
+
+.header_close, .header_toggle, .nav-wrapper {
+    display: none;
+}
+
+.firstframe {
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+    margin: 220px auto 0;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.firstframe-logo {
+    margin-top: -30px;
+    
+}
+
+.firstframe p {
+    color:  hsl(0, 0%, 48%);
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.mybuttons {
+    margin-top: 45px;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+
+
+ .firstbutton {
+    margin: 0 20px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background-color:hsl(176, 50%, 47%) ;
+}
+
+.firstbutton:hover {
+    background-color:hsl(176, 72%, 28%) ;
+}
+
+.bookmark-button {
+    margin: 0 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.bookmark-button button {
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 12px 35px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.bookmark-button button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.bookmark-button img {
+    margin-right: -30px;
+    z-index: 1;
+}
+
+.secondframe {
+    height: 200px;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    text-align: center;
+}
+
+.framewrapper {
+    text-align: left;
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.framewrapper h1 {
+    font-size: 28px;
+}
+
+.framewrapper span {
+    font-size: 12px;
+    color: hsl(0, 3%, 51%);
+}
+
+.framewrapper-item {
+    padding-right: 40px;
+    border-right: 0.5px solid hsl(0, 3%, 51%);;
+}
+
+.framewrapper-item.active {
+    border: none;
+}
+
+#progressbar {
+    border-radius: 25px;
+    margin: 40px auto;
+    max-width: 550px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+#myBar {
+    border-radius: 25px;
+    width: 80%;
+    height: 10px;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.thirdframe {
+    padding: 20px;
+    height: auto;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: ;
+    padding: 20px;
+}
+
+.thirdframe h3 {
+    padding: 20px;
+    font-style: normal;
+}
+
+.thirdframe .third-p {
+    color: hsl(0, 0%, 48%);
+    font-size: 14px;
+    line-height: 25px;
+    padding: 15px;
+}
+
+.thirdframe .thirdframe-section-1 {
+    border: .5px solid hsl(0, 0%, 48%);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.thirdframe .thirdframe-section-1 p {
+    color: hsl(0, 0%, 48%);
+    font-size: 14px;
+    line-height: 25px;
+
+}
+
+.thirdframe-section-1 .firstspan,
+.secondspan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thirdframe-section-1 .firstspan span {
+    color: hsl(176, 50%, 47%);
+}
+
+.thirdframe-section-1 .secondspan .secondspan-child {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.thirdframe-section-1 .secondspan .secondspan-child span {
+    font-size: 10px;
+    /* margin-right: -30px; */
+}
+
+.thirdframe-section-1 .secondspan button {
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: hsl(176, 50%, 47%);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.thirdframe-section-1 .secondspan button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    display: none;
+    transition: 0.5s;
+}
+
+.popup {
+    max-width: 600px;
+    width: 100%;
+    max-height: calc(100vh - 210px);
+    width: 100%;
+    margin: 40px auto 0;
+    padding: 20px;
+    background: white;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    overflow-y: auto;
+
+}
+
+.popup .popup-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.popup .popup-close img {
+    width: 20px;
+}
+
+.popup-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popup-section .term {
+    border: 1px solid gray;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.pledge-wrapper {
+    display: none;
+}
+
+.unbox-text .pledge-wrapper {
+    display: block;
+}
+
+.popup-section .term .pledge {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.popup-section .term .pledge p {
+    margin-left: 20px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+input[type="text"] {
+    border: 1px solid hsl(176, 50%, 47%);
+    outline: none;
+    padding: 6px 12px;
+    border-radius: 25px;
+    width: 90px;
+
+}
+
+.popup-section .terminal {
+    display: flex;
+    gap: 10px;
+    justify-items: baseline;
+    margin: 20px;
+}
+
+.popup-section .terminal .terminal-flex .terminal-headline {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.activator{
+    cursor: pointer;
+    color: hsl(176, 50%, 47%);
+}
+
+input[type="radio"] {
+    color: green;
+    background-color: green;
+}
+
+.terminal-headline .last {
+    margin-left: 200px;
+}
+.terminal-headline .sec {
+    margin-left: 180px;
+}
+
+.terminal-headline .thir {
+    margin-left: 150px;
+}
+
+
+
+/* .pledge {
+    display: none;
+   
+} */
+
+
+
+.success-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 3;
+    display: none;
+    transform: 0.5s;
+} 
+
+.success {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 5% auto;
+    border-radius: 5px;
+
+}
+
+.success button {
+    outline: none;
+    border: none;
+    padding: 8px 18px;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+body {
+    background-image: url(./images/image-hero-mobile.jpg);
+    background-size: 100%;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 0 28px;
+}
+
+.header_toggle{
+    display: inline;
+    color: white;
+    font-weight: bold;
+    width: 30px;
+}
+
+/* .nav-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+    .nav {
+        position: fixed;
+		/* background-color: white; */
+		color: black;
+		width: 80%;
+        margin: 45px 30px 0 20px;
+		height: auto;
+		z-index: 100;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 1.2rem 20px;
+        border-bottom: 0.5px solid gray;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    .show.nav{
+		opacity: 1;
+        transform: translateY(0);
+	}
+
+    .firstframe {
+        height: auto;
+        width: 80%;
+        margin: 220px auto 0;
+        background-color: white;
+        text-align: center;
+        padding: 0 50px 50px 50px;
+    }
+    .firstframe h1 {
+        margin-top: 20px;
+    }
+
+    .firstframe-logo {
+        margin-top: -30px;
+        
+    }
+
+    .mybuttons {
+        gap: 5px;
+    }
+
+    .firstbutton {
+        padding: 12px 35px;
+        font-weight: 600;
+    }
+
+    .bookmark {
+        display: none;
+    }
+
+    .secondframe {
+        height: auto;
+        width: 80%;
+        margin: 60px auto 40px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .framewrapper {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+    
+    }
+
+    
+
+    .framewrapper-item {
+        border: none;
+    }
+
+    .thirdframe-section-1 .firstspan {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        /* justify-content: space-evenly; */
+    }
+
+    .thirdframe-section-1 .firstspan span {
+        padding: inherit;
+    }
+
+    .thirdframe-section-1 .secondspan {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .thirdframe-section-1 {
+        padding: 15px;
+    }
+
+    .thirdframe-section-1 p {
+        padding-right: 15px;
+    }
+
+
+    .popup-wrapper{
+        padding: 0 40px;
+    }
+
+    .terminal {
+
+    }
+
+    .popup-section .terminal .terminal-flex .terminal-headline {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .terminal-headline .last {
+        margin-left: 0
+    }
+
+    .popup-section .term .pledge {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    
+
+
+}
+
